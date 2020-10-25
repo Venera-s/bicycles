@@ -1,0 +1,31 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 21px 305px 0 305px;
+}
+
+.main-nav__intro-wrap {
+  padding-top: 256px;
+}
+
+.main-nav__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 9px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-nav__item:not(:last-child) {
+  padding-right: 134px;
+}
+
+.main-nav__link {
+  line-height: 32px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav__btn {
+  display: none;
+}

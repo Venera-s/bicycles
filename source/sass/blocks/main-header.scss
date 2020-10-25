@@ -1,4 +1,32 @@
 .main-header {
-  background-image: url("../../img/bike-desktop.png");
+  display: flex;
+  flex-wrap: wrap;
+  background: url("../../img/bike-desktop.png") 50% 0% no-repeat;
   background-color: $color-main;
+}
+
+.main-nav__intro-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 280px 240px;
+}
+
+.main-nav__intro {
+  width: 473px;
+}
+
+.main-header__title {
+  @include reset-indents;
+  font-size: 46px;
+  line-height: 64px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.main-header__description {
+  @include reset-indents;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
 }

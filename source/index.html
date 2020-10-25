@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <title>Moon - интернет-магазинов велосипедов</title>
+  <title>Moon - интернет-магазин велосипедов</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preload" href="fonts/open-sans-300.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/open-sans-400.woff2" as="font" crossorigin="anonymous">
@@ -10,30 +11,51 @@
   <link rel="preload" href="fonts/open-sans-700.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
+
 <body>
-<header class="main-header">
-  <nav class="main-nav">
-  <a class="main-nav__logo" href="#">
-    <svg class="main-nav__icon" width="68" height="21">
-      <use xlink:href="img/sprite.svg#icon-logo"></use>
-    </svg>
-  </a>
-  <ul class="main-nav__list">
-    <li class="main-nav__item" href="#">О нас</li>
-    <li class="main-nav__item" href="#">Виды велосипедов</li>
-    <li class="main-nav__item" href="#">Видео про велосипеды</li>
-    <li class="main-nav__item" href="#">Контакты</li>
-  </ul>
-</nav>
-<h1 class="main-header__title">Мы продаем велосипеды</h1>
-<p class="main-header__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-<section class="form-bid">
-  <h2 class="visually-hidden form-bid__title">Подобрать велосипед</h2>
-  <p class="form-bid__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-  <input class="form-bid__name" type="text" placeholder="Введите Ваше Имя">
-  <input class="form-bid__phone" type="number" placeholder="Введите Ваш номер телефона">
-</section>
-<submit class="form-bid__btn" type="submit">Подобрать велосипед мечты</submit>
-</header>
+  <header class="main-header container">
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">О нас</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Виды велосипедов</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Видео про велосипеды</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="main-nav__btn" type="button" aria-label="Открыть меню"></button>
+    <div class="main-nav__intro-wrap">
+      <div class="main-nav__intro">
+        <a class="main-nav__logo" href="#">
+          <svg class="main-nav__icon" width="68" height="21">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <h1 class="main-header__title">Мы продаем велосипеды</h1>
+        <p class="main-header__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      </div>
+      <article class="form-bid">
+        <h2 class="visually-hidden form-bid__title">Подобрать велосипед</h2>
+        <p class="form-bid__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <div class="form-bid__wrap">
+          <input class="form-bid__input form-bid__input--name" type="text" placeholder="Введите Ваше Имя">
+        </div>
+        <div class="form-bid__wrap">
+          <input class="form-bid__input form-bid__input--phone" type="text" placeholder="Введите Ваш номер телефона">
+        </div>
+        <div class="form-bid__wrap">
+          <submit class="form-bid__btn" type="submit">Подобрать велосипед мечты</submit>
+        </div>
+      </article>
+  </header>
+  </div>
 </body>
+
 </html>
