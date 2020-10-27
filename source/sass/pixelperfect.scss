@@ -1,87 +1,17 @@
-//-------------------------------MODAL-BASKET-------------------------------//
-
-// body {
-//   background: url("../img/mishka-modal-mobile.jpg") no-repeat 50% 0;
-//   opacity: 0.2;
-//   min-height: 3932px;
-// }
-
-// @media (min-width: $tablet-width) {
-//   body {
-//     background: url("../img/mishka-modal-tablet.jpg") no-repeat 50% 0;
-//     opacity: 0.2;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   body {
-//     background: url("../img/mishka-modal-desktop.jpg") no-repeat 50% 0;
-//     opacity: 0.2;
-//   }
-// }
-
-//-------------------------------FORM-------------------------------//
-
-// body {
-//   background: url("../img/mishka-form-mobile.jpg") no-repeat 50% 0;
-//   opacity: 0.2;
-//   min-height: 3932px;
-// }
-
-// @media (min-width: $tablet-width) {
-//   body {
-//     background: url("../img/mishka-form-tablet.jpg") no-repeat 50% 0;
-//     opacity: 0.2;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   body {
-//     background: url("../img/mishka-form-desktop.jpg") no-repeat 50% 0;
-//     opacity: 0.2;
-//   }
-// }
-
-//-------------------------------CATALOG-------------------------------//
-
-// body {
-//   background: url("../img/mishka-catalog-mobile.jpg") no-repeat 50% 0;
-//   opacity: 0.2;
-//   min-height: 3932px;
-// }
-
-// @media (min-width: $tablet-width) {
-//   body {
-//     background: url("../img/mishka-catalog-tablet.jpg") no-repeat 50% 0;
-//     opacity: 0.2;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   body {
-//     background: url("../img/mishka-catalog-desktop.jpg") no-repeat 50% 0;
-//     opacity: 0.2;
-//   }
-// }
 
 //-------------------------------INDEX-------------------------------//
 
-// body {
-//   background: url("../img/mishka-index-mobile2.jpg") no-repeat 50% 0;
-//   opacity: 0.2;
-//   min-height: 3932px;
-// }
+body {
+  background: url("../img/desktop.jpg") no-repeat 50% 0;
+  opacity: 0.2;
 
-// @media (min-width: $tablet-width) {
-//   body {
-//     background: url("../img/mishka-index-tablet2.jpg") no-repeat 50% 0;
-//     opacity: 0.2;
-//   }
-// }
+  @media (width: $tablet-width) {
+    background: url("../img/tablet.jpg") no-repeat 50% 0;
+    opacity: 0.2;
+  }
 
-// @media (min-width: $desktop-width) {
-//   body {
-//     background: url("../img/mishka-index-desktop2.jpg") no-repeat 50% 0;
-//     opacity: 0.2;
-//   }
-// }
+  @media (width: $mobile-width) {
+    background: url("../img/mobile.jpg") no-repeat 50% 0;
+    opacity: 0.2;
+  }
+}

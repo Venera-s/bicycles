@@ -5,22 +5,25 @@
 
 .form-bid__text {
   @include reset-indents;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   font-size: 17px;
   font-weight: 600;
   text-align: center;
   color: #ffffff;
 }
 
-.form-bid__wrap {
+.form-bid__wrap:not(:last-child) {
   padding-bottom: 20px;
 }
 
 .form-bid__input {
   @include reset-indents;
   width: 327px;
-  padding: 13px 30px 10px;
+  padding: 12px 30px 10px;
+  font-size: 15px;
+  line-height: 24px;
   border: 1px solid #c9ccd4;
+  border-radius: 6px;
 }
 
 .form-bid__btn {
@@ -30,4 +33,6 @@
   line-height: 21px;
   font-weight: 700;
   background-color: $color-accent;
+  border: none;
+  border-radius: 6px;
 }
