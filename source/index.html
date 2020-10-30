@@ -15,6 +15,14 @@
 <body>
   <header class="main-header">
     <div class="container">
+      <div class="main-header__logo-wrap">
+        <a class="main-header__logo main-header__logo--indent" href="#">
+          <svg class="main-header__icon" width="68" height="21" fill="red">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <button class="main-header__btn main-header__btn--close" type="button" aria-label="Открыть меню"></button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -31,14 +39,7 @@
           </li>
         </ul>
       </nav>
-      <div class="main-header__logo-wrap">
-        <a class="main-header__logo main-header__logo--indent" href="#">
-          <svg class="main-header__icon" width="68" height="21">
-            <use xlink:href="img/sprite.svg#icon-logo"></use>
-          </svg>
-        </a>
-        <button class="main-header__btn" type="button" aria-label="Открыть меню"></button>
-      </div>
+
       <div class="main-header__intro-wrap">
         <div class="main-header__intro">
           <a class="main-header__logo main-header__logo--indent main-header__logo--close" href="#">
@@ -46,25 +47,84 @@
               <use xlink:href="img/sprite.svg#icon-logo"></use>
             </svg>
           </a>
-          <h1 class="main-header__title">Мы продаем велосипеды</h1>
-          <p class="main-header__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          <div class="main-header__title-wrap">
+            <div class="main-header__intro-indents/">
+              <h1 class="main-header__title">Мы продаем велосипеды</h1>
+              <p class="main-header__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+            </div>
+          </div>
         </div>
-        <article class="form-bid">
+        <form class="form-bid" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="visually-hidden form-bid__title">Подобрать велосипед</h2>
           <p class="form-bid__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <div class="form-bid__wrap">
+            <!-- label -->
             <input class="form-bid__input form-bid__input--name" type="text" placeholder="Введите Ваше Имя">
           </div>
           <div class="form-bid__wrap">
+            <!-- label -->
             <input class="form-bid__input form-bid__input--phone" type="text" placeholder="Введите Ваш номер телефона">
           </div>
           <div class="form-bid__wrap">
             <button class="form-bid__btn" type="submit">Подобрать велосипед мечты</button>
           </div>
-        </article>
+        </form>
       </div>
     </div>
   </header>
+  <footer class="main-footer container">
+    <div class="main-footer__intro">
+      <h2 class="main-footer__title">Как нас найти?</h2>
+      <p class="main-footer__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+    </div>
+    <div class="main-footer__map">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCQqv8VH3C" style="border: 0;" allowfullscreen=""></iframe>
+      <picture>
+        <source type="image/webp" media="(min-width: 1024px)"
+          srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+
+
+        <source media="(min-width: 1024px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.png 2x">
+        <img class="main-footer__map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.png 2x"
+          alt="Схема проезда к интернет-магазину Moon по адресу ул. Большая Конюшенная, д. 19">
+      </picture>
+    </div>
+    <!-- <div class="main-footer__contacts">
+      <a class="main-footer__link main-footer__link--mail" href="mailto:puteshestviemechta@gmail.ru">
+        <svg fill="none" width="26" height="20">
+          <use xlink:href="img/sprite.svg#icon-mail"></use>
+        </svg>
+        puteshestviemechta@gmail.ru
+      </a>
+      <a class="main-footer__link main-footer__link--tel" href="tel:+749978468446">
+        <svg fill="none" width="22" height="24">
+          <use xlink:href=" img/sprite.svg#icon-phone"></use>
+        </svg>
+        +7 (499)-784-684-46
+      </a>
+    </div> -->
+    <ul class="main-footer__list">
+      <li class="main-footer__item">
+        <a class="main-footer__link main-footer__link--mail" href="mailto:puteshestviemechta@gmail.ru">
+          <svg fill="none" width="26" height="20">
+            <use xlink:href="img/sprite.svg#icon-mail"></use>
+          </svg>
+          puteshestviemechta@gmail.ru
+        </a>
+      </li>
+      <li class="main-footer__item">
+        <a class="main-footer__link main-footer__link--tel" href="tel:+749978468446">
+          <svg fill="none" width="22" height="24">
+            <use xlink:href=" img/sprite.svg#icon-phone"></use>
+          </svg>
+          +7 (499)-784-684-46
+        </a>
+      </li>
+    </ul>
+  </footer>
 </body>
 
 </html>

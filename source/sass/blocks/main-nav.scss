@@ -1,6 +1,11 @@
 .main-nav {
   padding-right: 263px;
   padding-left: 282px;
+
+  @media (max-width: $tablet-width-max) {
+    top: 20px;
+    padding: 0;
+  }
 }
 
 .main-nav__list {
@@ -11,7 +16,16 @@
   padding-left: 23px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 48px;
+    padding-bottom: 138px;
+    border: none;
+    background-color: $bgcolor-main;
+  }
+
+  @media (max-width: $tablet-width-max) {
     display: none;
   }
 }
@@ -21,19 +35,44 @@
 }
 
 .main-nav__link {
+  position: relative;
   padding-top: 21px;
   padding-bottom: 9px;
   line-height: 32px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+    padding: 17px 35px 17px 16px;
+    font-size: 20px;
+    line-height: 28px;
+    color: $color-darkblue;
+    background-color: $bgcolor-accent;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 24px;
+      width: 8px;
+      height: 12px;
+      background: url("../../img/arrow.svg") no-repeat;
+    }
+  }
 }
 
 .main-nav__item:not(:last-child) {
   padding-right: 135px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 30px;
+    padding: 0;
+  }
 }
 
 .main-nav__btn {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     @include reset-indents;
     display: block;
     margin-left: auto;

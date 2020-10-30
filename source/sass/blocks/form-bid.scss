@@ -1,6 +1,15 @@
 .form-bid {
   width: 327px;
   text-align: center;
+
+  @media (max-width: $tablet-width-max) {
+    background-color: $bgcolor-main;
+  }
+
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+  }
 }
 
 .form-bid__text {
@@ -9,7 +18,17 @@
   font-size: 17px;
   font-weight: 600;
   text-align: center;
-  color: #ffffff;
+  color: $bgcolor-main;
+
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 30px;
+    font-size: 18px;
+    color: $color-main;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-bottom: 20px;
+  }
 }
 
 .form-bid__wrap:not(:last-child) {
@@ -24,6 +43,10 @@
   line-height: 24px;
   border: 1px solid #c9ccd4;
   border-radius: 6px;
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+  }
 }
 
 .form-bid__btn {
@@ -35,4 +58,10 @@
   background-color: $color-accent;
   border: none;
   border-radius: 6px;
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    padding-right: 28px;
+    padding-left: 28px;
+  }
 }

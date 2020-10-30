@@ -1,31 +1,44 @@
 .main-header {
   background: url("../../img/bike-desktop.png") 50% 0 no-repeat;
   background-color: $color-main;
+  background-size: cover;
 
-  @media (max-width: $tablet-width) {
-    background: url("../../img/bike-tablet.png") 50% 0 no-repeat;
+  @media (max-width: $tablet-width-max) {
+    background: none;
   }
 }
 
 .main-header__logo-wrap {
   display: none;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 56px;
+    // padding-bottom: 81px;
+    background-color: $bgcolor-main;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding: 0;
   }
 }
 
 .main-header__btn {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     @include reset-indents;
-    display: block;
+    display: none;
     width: 50px;
     height: 50px;
-    background: url("../../img/menu.svg") 50% 50% no-repeat;
+    background: url("../../img/menu-open.svg") 50% 50% no-repeat;
     background-color: $color-accent;
     border: none;
+  }
+}
+
+.main-header__btn--close {
+  @media (max-width: $tablet-width-max) {
+    background: url("../../img/menu-close.svg") 50% 50% no-repeat;
+    background-color: $bgcolor-main;
   }
 }
 
@@ -34,15 +47,39 @@
   justify-content: space-between;
   padding: 256px 280px 238px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     flex-direction: column;
     align-items: center;
     padding: 0;
   }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.main-header__intro-indents {
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .main-header__intro {
   width: 418px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+    margin-bottom: 70px;
+    padding-bottom: 80px;
+    background: url("../../img/bike-tablet.png") 50% 0 no-repeat;
+    background-color: $color-main;
+    background-size: cover;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: auto;
+    padding-bottom: 139px;
+  }
 }
 
 .main-header__logo {
@@ -52,14 +89,23 @@
 .main-header__logo--indent {
   padding-bottom: 21px;
 
-  @media (max-width: $tablet-width) {
-    padding: 25px 21px 0;
+  @media (max-width: $tablet-width-max) {
+    padding: 21px 21px 0;
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width-max) {
   .main-header__logo--close {
     display: none;
+  }
+}
+
+.main-header__title-wrap {
+  @media (max-width: $tablet-width-max) {
+    padding-top: 68px;
+    background: url("../../img/bike-tablet.png") 50% 0 no-repeat;
+    background-color: $color-main;
+    background-size: cover;
   }
 }
 
@@ -69,11 +115,13 @@
   font-size: 46px;
   line-height: 64px;
   font-weight: 700;
-  color: #ffffff;
+  color: $bgcolor-main;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 19px;
     font-size: 30px;
     line-height: 42px;
+    text-align: center;
   }
 }
 
@@ -84,7 +132,7 @@
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     font-size: 18px;
     text-align: center;
   }
