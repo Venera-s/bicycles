@@ -16,7 +16,7 @@
   <header class="main-header">
     <div class="container">
       <div class="main-header__logo-wrap">
-        <a class="main-header__logo main-header__logo--indent" href="#">
+        <a class="main-header__logo main-header__logo--indent">
           <svg class="main-header__icon" width="68" height="21" fill="red">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
@@ -39,7 +39,6 @@
           </li>
         </ul>
       </nav>
-
       <div class="main-header__intro-wrap">
         <div class="main-header__intro">
           <a class="main-header__logo main-header__logo--indent main-header__logo--close" href="#">
@@ -81,6 +80,59 @@
       <li class="facts__item facts__item--consult">Профессиональные консультации!</li>
     </ul>
   </section>
+  <section class="bikes container">
+    <h2>Виды велосипедов</h2>
+    <ul class="bikes__list">
+      <li>
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)"
+            srcset="img/road-bike-desktop.webp 1x, img/road-bike-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/road-bike-mobile.webp 1x, img/road-bike-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="img/road-bike-mobile.webp 1x, img/road-bike-mobile@2x.webp 2x">
+
+
+          <source media="(min-width: 1024px)" srcset="img/road-bike-desktop.jpg 1x, img/road-bike-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/road-bike-mobile.jpg 1x, img/road-bike-mobile@2x.jpg 2x">
+          <img class="bikes__img bikes__img--road" src="img/road-bike-mobile.jpg" srcset="img/road-bike-mobile@2x.jpg 2x"
+            alt="Дорожный велосипед">
+        </picture>
+        <p>Дорожный велосипед</p>
+      </li>
+      <li>
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)"
+            srcset="img/mountain-bike-desktop.webp 1x, img/mountain-bike-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile@2x.webp 2x">
+
+
+          <source media="(min-width: 1024px)" srcset="img/mountain-bike-desktop.jpg 1x, img/mountain-bike-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/mountain-bike-mobile.jpg 1x, img/mountain-bike-mobile@2x.jpg 2x">
+          <img class="bikes__img bikes__img--mountain" src="img/mountain-bike-mobile.jpg" srcset="img/mountain-bike-mobile@2x.jpg 2x"
+            alt="Горный велосипед">
+        </picture>
+        <p>Горный велосипед</p>
+      </li>
+      <li>
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)"
+            srcset="img/children-bicycle-desktop.webp 1x, img/children-bicycle-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/children-bicycle-mobile.webp 1x, img/children-bicycle-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="img/children-bicycle-mobile.webp 1x, img/children-bicycle-mobile@2x.webp 2x">
+
+
+          <source media="(min-width: 1024px)" srcset="img/children-bicycle-desktop.jpg 1x, img/children-bicycle-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/children-bicycle-mobile.jpg 1x, img/children-bicycle-mobile@2x.jpg 2x">
+          <img class="bikes__img bikes__img--children" src="img/children-bicycle-mobile.jpg" srcset="img/children-bicycle-mobile@2x.jpg 2x"
+            alt="Детский велосипед">
+        </picture>
+        <p>Детский велосипед</p>
+      </li>
+    </ul>
+  </section>
   <footer class="main-footer container">
     <div class="main-footer__intro">
       <h2 class="main-footer__title">Как нас найти?</h2>
@@ -101,20 +153,6 @@
           alt="Схема проезда к интернет-магазину Moon по адресу ул. Большая Конюшенная, д. 19">
       </picture>
     </div>
-    <!-- <div class="main-footer__contacts">
-      <a class="main-footer__link main-footer__link--mail" href="mailto:puteshestviemechta@gmail.ru">
-        <svg fill="none" width="26" height="20">
-          <use xlink:href="img/sprite.svg#icon-mail"></use>
-        </svg>
-        puteshestviemechta@gmail.ru
-      </a>
-      <a class="main-footer__link main-footer__link--tel" href="tel:+749978468446">
-        <svg fill="none" width="22" height="24">
-          <use xlink:href=" img/sprite.svg#icon-phone"></use>
-        </svg>
-        +7 (499)-784-684-46
-      </a>
-    </div> -->
     <ul class="main-footer__list">
       <li class="main-footer__item">
         <a class="main-footer__link main-footer__link--mail" href="mailto:puteshestviemechta@gmail.ru">
@@ -127,13 +165,14 @@
       <li class="main-footer__item">
         <a class="main-footer__link main-footer__link--tel" href="tel:+749978468446">
           <svg fill="none" width="22" height="24">
-            <use xlink:href=" img/sprite.svg#icon-phone"></use>
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
           </svg>
           +7 (499)-784-684-46
         </a>
       </li>
     </ul>
   </footer>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

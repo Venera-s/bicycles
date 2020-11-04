@@ -1,0 +1,62 @@
+.bikes {
+  padding: 150px 157px;
+  background-color: $bgcolor-shadeblue;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 50px 89px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.bikes h2 {
+  @include reset-indents;
+  padding-bottom: 50px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: $color-darkgray;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 24px;
+    line-height: 41px;
+  }
+
+  // @media (max-width: $mobile-width-max) {
+
+  // }
+}
+
+.bikes__list {
+  @include reset-list;
+  display: flex;
+}
+
+.bikes__list li:not(:last-child) {
+  padding-right: 50px;
+}
+
+.bikes__list img {
+  padding-bottom: 11px;
+}
+
+.bikes__list p {
+  @include reset-indents;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.bikes__list .bikes__img--mountain {
+  padding-top: 39px;
+}
+
+.bikes__list .bikes__img--road {
+  padding-top: 10px;
+}
+
