@@ -80,58 +80,54 @@
       <li class="facts__item facts__item--consult">Профессиональные консультации!</li>
     </ul>
   </section>
-  <section class="bikes container">
-    <h2>Виды велосипедов</h2>
-    <ul class="bikes__list">
-      <li>
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)"
-            srcset="img/road-bike-desktop.webp 1x, img/road-bike-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/road-bike-mobile.webp 1x, img/road-bike-mobile@2x.webp 2x">
-          <source type="image/webp" srcset="img/road-bike-mobile.webp 1x, img/road-bike-mobile@2x.webp 2x">
+  <section class="bikes">
+    <div class="container">
+      <h2>Виды велосипедов</h2>
+      <ul class="bikes__list">
+        <li class="bikes__item bikes__item--road">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/road-bike-desktop.webp 1x, img/road-bike-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/road-bike-mobile.webp 1x, img/road-bike-mobile@2x.webp 2x">
 
 
-          <source media="(min-width: 1024px)" srcset="img/road-bike-desktop.jpg 1x, img/road-bike-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/road-bike-mobile.jpg 1x, img/road-bike-mobile@2x.jpg 2x">
-          <img class="bikes__img bikes__img--road" src="img/road-bike-mobile.jpg" srcset="img/road-bike-mobile@2x.jpg 2x"
-            alt="Дорожный велосипед">
-        </picture>
-        <p>Дорожный велосипед</p>
-      </li>
-      <li>
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)"
-            srcset="img/mountain-bike-desktop.webp 1x, img/mountain-bike-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile@2x.webp 2x">
-          <source type="image/webp" srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/road-bike-desktop.png 1x, img/road-bike-desktop@2x.png 2x">
+            <img class="bikes__img bikes__img--road" src="img/road-bike-mobile.png"
+              srcset="img/road-bike-mobile@2x.png 2x" alt="Дорожный велосипед">
+          </picture>
+          <p>Дорожный велосипед</p>
+        </li>
+        <li class="bikes__item bikes__item--mountain">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/mountain-bike-desktop.webp 1x, img/mountain-bike-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile@2x.webp 2x">
 
 
-          <source media="(min-width: 1024px)" srcset="img/mountain-bike-desktop.jpg 1x, img/mountain-bike-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/mountain-bike-mobile.jpg 1x, img/mountain-bike-mobile@2x.jpg 2x">
-          <img class="bikes__img bikes__img--mountain" src="img/mountain-bike-mobile.jpg" srcset="img/mountain-bike-mobile@2x.jpg 2x"
-            alt="Горный велосипед">
-        </picture>
-        <p>Горный велосипед</p>
-      </li>
-      <li>
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)"
-            srcset="img/children-bicycle-desktop.webp 1x, img/children-bicycle-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/children-bicycle-mobile.webp 1x, img/children-bicycle-mobile@2x.webp 2x">
-          <source type="image/webp" srcset="img/children-bicycle-mobile.webp 1x, img/children-bicycle-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="img/mountain-bike-desktop.png 1x, img/mountain-bike-desktop@2x.png 2x">
+            <img class="bikes__img bikes__img--mountain" src="img/mountain-bike-mobile.png"
+              srcset="img/mountain-bike-mobile@2x.png 2x" alt="Горный велосипед">
+          </picture>
+          <p>Горный велосипед</p>
+        </li>
+        <li class="bikes__item bikes__item--children">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/children-bicycle-desktop.webp 1x, img/children-bicycle-desktop@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/children-bicycle-mobile.webp 1x, img/children-bicycle-mobile@2x.webp 2x">
 
 
-          <source media="(min-width: 1024px)" srcset="img/children-bicycle-desktop.jpg 1x, img/children-bicycle-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/children-bicycle-mobile.jpg 1x, img/children-bicycle-mobile@2x.jpg 2x">
-          <img class="bikes__img bikes__img--children" src="img/children-bicycle-mobile.jpg" srcset="img/children-bicycle-mobile@2x.jpg 2x"
-            alt="Детский велосипед">
-        </picture>
-        <p>Детский велосипед</p>
-      </li>
-    </ul>
+            <source media="(min-width: 1440px)"
+              srcset="img/children-bicycle-desktop.png 1x, img/children-bicycle-desktop@2x.png 2x">
+            <img class="bikes__img bikes__img--children" src="img/children-bicycle-mobile.png"
+              srcset="img/children-bicycle-mobile@2x.png 2x" alt="Детский велосипед">
+          </picture>
+          <p>Детский велосипед</p>
+        </li>
+      </ul>
+    </div>
   </section>
   <footer class="main-footer container">
     <div class="main-footer__intro">
