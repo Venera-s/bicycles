@@ -21,7 +21,7 @@
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
-        <button class="main-header__btn main-header__btn--close" type="button" aria-label="Открыть меню"></button>
+        <button class="main-header__btn" type="button" aria-label="Открыть меню"></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -132,12 +132,14 @@
       </div>
     </section>
   </main>
-  <section class="video container">
-    <div class="video__wrap">
-      <h2>Видео про велосипеды</h2>
-      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+  <section class="video">
+    <div class="video__intro">
+      <div class="container">
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+      </div>
     </div>
-    <div class="video__img">
+    <div class="video__img container">
       <picture>
         <source type="image/webp" media="(min-width: 1440px)"
           srcset="img/bike-front-desktop.webp 1x, img/bike-front-desktop@2x.webp 2x">
@@ -192,6 +194,7 @@
     </ul>
   </footer>
   <script src="js/script.min.js"></script>
+   <!-- <script src="js/modal.js"></script> -->
 </body>
 
 </html>

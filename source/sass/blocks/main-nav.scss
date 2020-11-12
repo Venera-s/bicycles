@@ -2,6 +2,11 @@
   padding-right: 263px;
   padding-left: 282px;
 
+  @media (max-width: $desktop-width) {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
   @media (max-width: $tablet-width-max) {
     top: 20px;
     padding: 0;
@@ -24,7 +29,9 @@
     border: none;
     background-color: $bgcolor-main;
   }
+}
 
+.main-nav__list--hidden {
   @media (max-width: $tablet-width-max) {
     display: none;
   }
@@ -64,6 +71,10 @@
 
 .main-nav__item:not(:last-child) {
   padding-right: 135px;
+
+  @media (max-width: $desktop-width) {
+    padding-right: 118px;
+  }
 
   @media (max-width: $tablet-width-max) {
     margin-bottom: 30px;

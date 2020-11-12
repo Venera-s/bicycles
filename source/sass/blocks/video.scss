@@ -2,11 +2,11 @@
   padding-bottom: 116px;
 }
 
-.video__wrap {
+.video__intro {
   padding: 120px 255px 480px;
   background-color: $bgcolor-darkpurplish;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $desktop-width-max-2) {
     padding: 100px 260px 200px;
   }
 
@@ -41,6 +41,10 @@
   text-align: center;
   color: rgba($bgcolor-main, 0.7);
 
+  @media (max-width: $desktop-width-max-2) {
+    padding: 0;
+  }
+
   @media (max-width: $tablet-width-max) {
     padding: 0 40px 0;
   }
@@ -51,11 +55,12 @@
 }
 
 .video__img {
+  position: relative;
   margin-top: -424px;
 
-  // @media (max-width: $desktop-width) {
-
-  // }
+  @media (max-width: $desktop-width-max-2) {
+    margin-top: -160px;
+  }
 
   @media (max-width: $tablet-width-max) {
     margin-top: -197px;
@@ -67,6 +72,50 @@
 }
 
 .video__img img {
-  margin: 0 auto;
   display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 255px;
+  padding-left: 255px;
+
+  @media (max-width: $desktop-width-max-2) {
+    padding-right: 260px;
+    padding-left: 260px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-right: 133px;
+    padding-left: 133px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.video__img button {
+  @include reset-indents;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65px;
+  height: 65px;
+  background: url("../img/icon-play.svg") no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  transition-timing-function: linear;
+
+  @media (max-width: $desktop-width-max-2) {
+    width: 91px;
+    height: 91px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 65px;
+    height: 65px;
+  }
 }
