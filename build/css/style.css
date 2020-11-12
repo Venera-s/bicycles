@@ -455,6 +455,10 @@ html {
 .main-header__intro-indents {
   padding-right: 16px;
   padding-left: 16px; }
+  @media (max-width: 1023px) {
+    .main-header__intro-indents {
+      padding-right: 35px;
+      padding-left: 35px; } }
 
 .main-header__intro {
   width: 418px; }
@@ -462,13 +466,8 @@ html {
     .main-header__intro {
       width: 100%;
       margin-bottom: 70px;
-      padding-bottom: 80px;
       background: url("../img/bike-tablet.png") 50% 0 no-repeat;
       background-size: cover; } }
-  @media (max-width: 767px) {
-    .main-header__intro {
-      width: auto;
-      padding-bottom: 139px; } }
 
 .main-header__logo {
   display: block; }
@@ -485,9 +484,11 @@ html {
 
 @media (max-width: 1023px) {
   .main-header__title-wrap {
-    padding-top: 68px;
-    background: url("../img/bike-tablet.png") 0 0 no-repeat;
-    background-size: cover; } }
+    padding: 68px 35px 80px; } }
+
+@media (max-width: 767px) {
+  .main-header__title-wrap {
+    padding: 68px 16px 70px; } }
 
 .main-header__title {
   margin: 0;
