@@ -16,8 +16,8 @@
 
 .main-footer__intro {
   @media (max-width: $mobile-width-max) {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 31px;
+    padding-left: 31px;
   }
 }
 
@@ -29,12 +29,12 @@
   font-weight: 600;
   color: $color-darkgray;
 
-  @media (max-width: tablet-width-max) {
+  @media (max-width: $tablet-width-max) {
     padding-bottom: 20px;
     font-size: 24px;
   }
 
-  @media (max-width: mobile-width-max) {
+  @media (max-width: $mobile-width-max) {
     font-size: 18px;
   }
 }
@@ -43,7 +43,7 @@
   @include reset-indents;
   max-width: 555px;
   margin: 0 auto;
-  padding-bottom: 41px;
+  padding-bottom: 40px;
   font-size: 17px;
   line-height: 31px;
   color: rgba($color-main, 0.7);
@@ -54,13 +54,17 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    padding-bottom: 25px;
+    padding-bottom: 19px;
   }
 }
 
 .main-footer__map {
   position: relative;
   margin-bottom: 30px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 5px;
+  }
 }
 
 .main-footer__map iframe {
@@ -107,17 +111,30 @@
 .main-footer__link svg {
   position: absolute;
   top: 0;
-  left: 0;
+}
+
+.main-footer__icon {
+  &--mail {
+    @media (max-width: $tablet-width-max) {
+      left: -14px;
+    }
+  }
+
+  &--tel {
+    @media (max-width: $tablet-width-max) {
+      left: 5px;
+    }
+  }
 }
 
 .main-footer__item .main-footer__link {
   &--mail {
-    padding-left: 42px;
+    padding-left: 26px;
     line-height: 22px;
   }
 
   &--tel {
-    padding-left: 34px;
+    padding-left: 39px;
     line-height: 32px;
   }
 }

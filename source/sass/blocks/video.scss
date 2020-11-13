@@ -1,5 +1,9 @@
 .video {
-  padding-bottom: 116px;
+  padding-bottom: 151px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 73px;
+  }
 }
 
 .video__intro {

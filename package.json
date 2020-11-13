@@ -26,7 +26,8 @@
     "posthtml-include": "^1.4.3",
     "readable-stream": "^3.6.0",
     "stylelint": "^10.1.0",
-    "stylelint-config-htmlacademy": "^0.1.4"
+    "stylelint-config-htmlacademy": "^0.1.4",
+    "gulp-strip-comments": "^2.5.2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

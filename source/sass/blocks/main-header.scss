@@ -1,5 +1,7 @@
 .main-header {
-  background: url("../img/bike-desktop.png") 50% 0 no-repeat;
+  background-image: url("../img/bike-desktop.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
   background-size: cover;
 
   @media (max-width: $tablet-width-max) {
@@ -13,25 +15,24 @@
   @media (max-width: $tablet-width-max) {
     display: flex;
     justify-content: space-between;
-  }
-
-  @media (max-width: $mobile-width-max) {
-    padding: 0;
+    align-items: center;
   }
 }
 
 .main-header__btn {
-  display: none;
-}
-
-.main-header__btn--open {
   @media (max-width: $tablet-width-max) {
     @include reset-indents;
     display: block;
     width: 50px;
     height: 50px;
-    background: url("../img/menu-open.svg") 50% 50% no-repeat;
     border: none;
+  }
+}
+
+.main-header__btn--open {
+  @media (max-width: $tablet-width-max) {
+    background: url("../img/menu-open.svg") 50% 50% no-repeat;
+    background-color: $color-accent;
   }
 }
 
@@ -47,40 +48,42 @@
   margin-bottom: 150px;
   padding: 256px 280px 238px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $desktop-width-max-2) {
     margin-bottom: 100px;
-    padding: 150px 115px 100px;
+    padding: 150px 150px 100px;
   }
 
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 118px;
+    margin-bottom: 70px;
     padding: 0;
   }
 
   @media (max-width: $mobile-width-max) {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 64px;
+    margin-bottom: 69px;
   }
 }
 
-.main-header__intro-indents {
-  padding-right: 16px;
-  padding-left: 16px;
+// .main-header__intro-indents {
+//   padding-right: 16px;
+//   padding-left: 16px;
 
-  @media (max-width: $tablet-width-max) {
-    padding-right: 35px;
-    padding-left: 35px;
-  }
-}
+//   @media (max-width: $tablet-width-max) {
+//     padding-right: 35px;
+//     padding-left: 35px;
+//   }
+// }
 
 .main-header__intro {
   width: 418px;
 
   @media (max-width: $tablet-width-max) {
+    z-index: -1;
     width: 100%;
+    margin-top: -53px;
     margin-bottom: 70px;
     // padding-top: 68px;
     // padding-bottom: 80px;
@@ -102,7 +105,11 @@
   padding-bottom: 21px;
 
   @media (max-width: $tablet-width-max) {
-    padding: 21px 21px 0;
+    padding: 25px 22px 0;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 17px;
   }
 }
 
@@ -114,11 +121,11 @@
 
 .main-header__title-wrap {
   @media (max-width: $tablet-width-max) {
-    padding: 68px 35px 80px;
+    padding: 136px 143px 79px;
   }
 
   @media (max-width: $mobile-width-max) {
-    padding: 68px 16px 70px;
+    padding: 121px 16px 70px;
   }
 }
 

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Moon - интернет-магазин велосипедов</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moon - интернет-магазин велосипедов: низкие цены, большой ассортимент, быстрая доставка">
   <link rel="preload" href="fonts/open-sans-300.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/open-sans-400.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/open-sans-600.woff2" as="font" crossorigin="anonymous">
@@ -57,12 +58,12 @@
           <h2 class="visually-hidden form-bid__title">Подобрать велосипед</h2>
           <p class="form-bid__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <div class="form-bid__wrap">
-            <!-- label -->
-            <input class="form-bid__input form-bid__input--name" type="text" placeholder="Введите Ваше Имя">
+            <label class="visually-hidden" for="name-field">Введите Ваше Имя</label>
+            <input class="form-bid__input form-bid__input--name" type="text" name="name" id="name-field" placeholder="Введите Ваше Имя">
           </div>
           <div class="form-bid__wrap">
-            <!-- label -->
-            <input class="form-bid__input form-bid__input--phone" type="text" placeholder="Введите Ваш номер телефона">
+            <label class="visually-hidden" for="tel-field">Введите Ваш номер телефона</label>
+            <input class="form-bid__input form-bid__input--phone" type="text" name="tel" id="tel-field" placeholder="Введите Ваш номер телефона">
           </div>
           <div class="form-bid__wrap">
             <button class="form-bid__btn" type="submit">Подобрать велосипед мечты</button>
@@ -160,7 +161,7 @@
       <p class="main-footer__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
     </div>
     <div class="main-footer__map">
-      <iframe src="https://yandex.ru/map-widget/v1/-/CCQqv8VH3C" style="border: 0;" allowfullscreen=""></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCQqv8VH3C" height="530" style="border:0;" allowfullscreen=""></iframe>
       <picture>
         <source type="image/webp" media="(min-width: 1024px)"
           srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
@@ -177,7 +178,7 @@
     <ul class="main-footer__list">
       <li class="main-footer__item">
         <a class="main-footer__link main-footer__link--mail" href="mailto:puteshestviemechta@gmail.ru">
-          <svg fill="none" width="26" height="20">
+          <svg class="main-footer__icon main-footer__icon--mail" fill="none" width="26" height="20">
             <use xlink:href="img/sprite.svg#icon-mail"></use>
           </svg>
           puteshestviemechta@gmail.ru
@@ -185,7 +186,7 @@
       </li>
       <li class="main-footer__item">
         <a class="main-footer__link main-footer__link--tel" href="tel:+749978468446">
-          <svg fill="none" width="22" height="24">
+          <svg class="main-footer__icon main-footer__icon--tel" fill="none" width="22" height="24">
             <use xlink:href="img/sprite.svg#icon-phone"></use>
           </svg>
           +7 (499)-784-684-46
@@ -193,8 +194,7 @@
       </li>
     </ul>
   </footer>
-  <script src="js/script.min.js"></script>
-   <!-- <script src="js/modal.js"></script> -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
