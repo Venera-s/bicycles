@@ -65,14 +65,16 @@ gulp.task("clean", function () {
   return clean("build");
 });
 
-gulp.task("copy", function () {
+gulp.task('copy', function () {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    'source/*.html',
+    'source/fonts/**/*.{woff,woff2}',
+    'source/img/**',
+    'source/js/main.js'
   ], {
-    base: "source"
+    base: 'source'
   })
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest('build'));
 });
 
 gulp.task("refresh", function (done) {
