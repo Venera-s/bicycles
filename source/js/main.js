@@ -44,4 +44,3 @@
   inputTel.addEventListener('input', onInputTelInput);
 
 })();
-

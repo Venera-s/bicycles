@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <title>Moon - интернет-магазин велосипедов</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Moon - интернет-магазин велосипедов: низкие цены, большой ассортимент, быстрая доставка">
+  <meta name="description"
+    content="Moon - интернет-магазин велосипедов: низкие цены, большой ассортимент, быстрая доставка">
   <link rel="preload" href="fonts/open-sans-300.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/open-sans-400.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/open-sans-600.woff2" as="font" crossorigin="anonymous">
@@ -18,7 +19,7 @@
     <div class="container">
       <div class="main-header__logo-wrap">
         <a class="main-header__logo main-header__logo--indent">
-          <svg class="main-header__icon" width="68" height="21" fill="red">
+          <svg class="main-header__icon" width="68" height="21">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
@@ -27,53 +28,53 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">О нас</a>
+            <a class="main-nav__link" href="#facts">О нас</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Виды велосипедов</a>
+            <a class="main-nav__link" href="#bikes">Виды велосипедов</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Видео про велосипеды</a>
+            <a class="main-nav__link" href="#video">Видео про велосипеды</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
+            <a class="main-nav__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
       <div class="main-header__intro-wrap">
         <div class="main-header__intro">
-          <a class="main-header__logo main-header__logo--indent main-header__logo--close" href="#">
+          <a class="main-header__logo main-header__logo--indent main-header__logo--close">
             <svg class="main-header__icon" width="68" height="21">
               <use xlink:href="img/sprite.svg#icon-logo"></use>
             </svg>
           </a>
           <div class="main-header__title-wrap">
-            <!-- <div class="main-header__intro-indents"> -->
-              <h1 class="main-header__title">Мы продаем велосипеды</h1>
-              <p class="main-header__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-            <!-- </div> -->
+            <h1 class="main-header__title">Мы продаем велосипеды</h1>
+            <p class="main-header__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
           </div>
         </div>
         <form class="form-bid" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="visually-hidden form-bid__title">Подобрать велосипед</h2>
           <p class="form-bid__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <div class="form-bid__wrap">
+          <div class="form-bid__field">
+            <input type="text" name="name" id="name-field"
+              placeholder="Введите Ваше Имя" required>
             <label class="visually-hidden" for="name-field">Введите Ваше Имя</label>
-            <input class="form-bid__input form-bid__input--name" type="text" name="name" id="name-field" placeholder="Введите Ваше Имя">
           </div>
-          <div class="form-bid__wrap">
+          <div class="form-bid__field">
+            <input type="text" name="tel" id="tel-field"
+              placeholder="Введите Ваш номер телефона" required>
             <label class="visually-hidden" for="tel-field">Введите Ваш номер телефона</label>
-            <input class="form-bid__input form-bid__input--phone" type="text" name="tel" id="tel-field" placeholder="Введите Ваш номер телефона">
           </div>
-          <div class="form-bid__wrap">
-            <button class="form-bid__btn" type="submit">Подобрать велосипед мечты</button>
+          <div class="form-bid__field">
+            <button type="submit">Подобрать велосипед мечты</button>
           </div>
         </form>
       </div>
     </div>
   </header>
   <main>
-    <section class="facts container">
+    <section id="facts" class="facts container">
       <h2>Несколько фактов о нас</h2>
       <ul>
         <li class="facts__item facts__item--choice">Самый широкий выбор велосипедов!</li>
@@ -82,19 +83,22 @@
         <li class="facts__item facts__item--consult">Профессиональные консультации!</li>
       </ul>
     </section>
-    <section class="bikes">
+    <section id="bikes" class="bikes">
       <div class="container">
         <h2>Виды велосипедов</h2>
         <ul class="bikes__list">
           <li class="bikes__item bikes__item--road">
             <picture>
+              <!-- 1х: 342px; 2x: 1006px -->
               <source type="image/webp" media="(min-width: 1440px)"
                 srcset="img/road-bike-desktop.webp 1x, img/road-bike-desktop@2x.webp 2x">
+              <!-- 1х: 300px; 2x: 600px -->
               <source type="image/webp" srcset="img/road-bike-mobile.webp 1x, img/road-bike-mobile@2x.webp 2x">
 
-
+              <!-- 1х: 342px; 2x: 1006px -->
               <source media="(min-width: 1440px)"
                 srcset="img/road-bike-desktop.png 1x, img/road-bike-desktop@2x.png 2x">
+              <!-- 1х: 300px; 2x: 600px -->
               <img class="bikes__img bikes__img--road" src="img/road-bike-mobile.png"
                 srcset="img/road-bike-mobile@2x.png 2x" alt="Дорожный велосипед">
             </picture>
@@ -102,13 +106,16 @@
           </li>
           <li class="bikes__item bikes__item--mountain">
             <picture>
+              <!-- 1х: 342px; 2x: 1006px -->
               <source type="image/webp" media="(min-width: 1440px)"
                 srcset="img/mountain-bike-desktop.webp 1x, img/mountain-bike-desktop@2x.webp 2x">
+              <!-- 1х: 300px; 2x: 600px -->
               <source type="image/webp" srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile@2x.webp 2x">
 
-
+              <!-- 1х: 342px; 2x: 1006px -->
               <source media="(min-width: 1440px)"
                 srcset="img/mountain-bike-desktop.png 1x, img/mountain-bike-desktop@2x.png 2x">
+              <!-- 1х: 300px; 2x: 600px -->
               <img class="bikes__img bikes__img--mountain" src="img/mountain-bike-mobile.png"
                 srcset="img/mountain-bike-mobile@2x.png 2x" alt="Горный велосипед">
             </picture>
@@ -116,14 +123,17 @@
           </li>
           <li class="bikes__item bikes__item--children">
             <picture>
+              <!-- 1х: 342px; 2x: 1006px -->
               <source type="image/webp" media="(min-width: 1440px)"
                 srcset="img/children-bicycle-desktop.webp 1x, img/children-bicycle-desktop@2x.webp 2x">
+              <!-- 1х: 300px; 2x: 600px -->
               <source type="image/webp"
                 srcset="img/children-bicycle-mobile.webp 1x, img/children-bicycle-mobile@2x.webp 2x">
 
-
+              <!-- 1х: 342px; 2x: 1006px -->
               <source media="(min-width: 1440px)"
                 srcset="img/children-bicycle-desktop.png 1x, img/children-bicycle-desktop@2x.png 2x">
+              <!-- 1х: 300px; 2x: 600px -->
               <img class="bikes__img bikes__img--children" src="img/children-bicycle-mobile.png"
                 srcset="img/children-bicycle-mobile@2x.png 2x" alt="Детский велосипед">
             </picture>
@@ -133,7 +143,7 @@
       </div>
     </section>
   </main>
-  <section class="video">
+  <section id="video" class="video">
     <div class="video__intro">
       <div class="container">
         <h2>Видео про велосипеды</h2>
@@ -142,35 +152,47 @@
     </div>
     <div class="video__img container">
       <picture>
+        <!-- 1х: 929px; 2x: 1858px -->
         <source type="image/webp" media="(min-width: 1440px)"
           srcset="img/bike-front-desktop.webp 1x, img/bike-front-desktop@2x.webp 2x">
+        <!-- 1х: 503px; 2x: 1006px -->
         <source type="image/webp" media="(min-width: 768px)"
           srcset="img/bike-front-tablet.webp 1x, img/bike-front-tablet@2x.webp 2x">
+        <!-- 1х: 288px; 2x: 576px -->
         <source type="image/webp" srcset="img/bike-front-mobile.webp 1x, img/bike-front-mobile@2x.webp 2x">
 
+        <!-- 1х: 929px; 2x: 1858px -->
         <source media="(min-width: 1440px)" srcset="img/bike-front-desktop.png 1x, img/bike-front-desktop@2x.png 2x">
+        <!-- 1х: 503px; 2x: 1006px -->
         <source media="(min-width: 768px)" srcset="img/bike-front-tablet.png 1x, img/bike-front-tablet@2x.png 2x">
+        <!-- 1х: 288px; 2x: 576px -->
         <img src="img/bike-front-mobile.png" srcset="img/bike-front-mobile@2x.png" alt="Видео про велосипеды">
       </picture>
       <button type="button"></button>
     </div>
   </section>
-  <footer class="main-footer container">
+  <footer id="contacts" class="main-footer container">
     <div class="main-footer__intro">
       <h2 class="main-footer__title">Как нас найти?</h2>
       <p class="main-footer__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
     </div>
     <div class="main-footer__map">
-      <iframe src="https://yandex.ru/map-widget/v1/-/CCQqv8VH3C" height="530" style="border:0;" allowfullscreen=""></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCQqv8VH3C" height="530" style="border:0;"
+        allowfullscreen=""></iframe>
       <picture>
+        <!-- 1х: 957px; 2x: 1914px -->
         <source type="image/webp" media="(min-width: 1024px)"
           srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+        <!-- 1х: 698px; 2x: 1396px -->
         <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+        <!-- 1х: 319px; 2x: 638px -->
         <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
 
-
+        <!-- 1х: 957px; 2x: 1914px -->
         <source media="(min-width: 1024px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.png 2x">
+        <!-- 1х: 698px; 2x: 1396px -->
         <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.png 2x">
+        <!-- 1х: 319px; 2x: 638px -->
         <img class="main-footer__map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.png 2x"
           alt="Схема проезда к интернет-магазину Moon по адресу ул. Большая Конюшенная, д. 19">
       </picture>
@@ -194,6 +216,7 @@
       </li>
     </ul>
   </footer>
+  <script src="js/vendor.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

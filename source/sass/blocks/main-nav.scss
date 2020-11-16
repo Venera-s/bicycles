@@ -71,6 +71,16 @@
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
 
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+
+  &:active {
+    color: rgba($color-accent, 0.6);
+  }
+
+
   @media (max-width: $tablet-width-max) {
     width: 100%;
     padding: 17px 35px 17px 16px;
@@ -82,15 +92,34 @@
     &::after {
       content: "";
       position: absolute;
-      top: 22px;
+      top: 26px;
       right: 24px;
       width: 8px;
       height: 12px;
       background: url("../../img/arrow.svg") no-repeat;
     }
+
+    &:hover::after,
+    &:focus::after {
+      color: $color-accent;
+      transform: scale(1.5);
+    }
+
+    &:active::after {
+      color: rgba($color-accent, 0.6);
+      transform: scale(1.1);
+    }
   }
 }
 
+// .main-nav__link:hover::after,
+// .main-nav__link:focus::after {
+//   color: $color-accent;
+// }
+
+// .main-nav__link:active::after {
+//   color: rgba($color-accent, 0.6);
+// }
 
 .main-nav__btn {
   @media (max-width: $tablet-width-max) {

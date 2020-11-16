@@ -1,8 +1,16 @@
 .video {
   padding-bottom: 151px;
 
+  @media (max-width: $desktop-width) {
+    padding-bottom: 95px;
+  }
+
   @media (max-width: $tablet-width-max) {
-    padding-bottom: 73px;
+    padding-bottom: 71px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-bottom: 70px;
   }
 }
 
@@ -71,7 +79,7 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    margin-top: -113px;
+    margin-top: -109px;
   }
 }
 
@@ -112,6 +120,16 @@
   transform: translate(-50%, -50%);
   transition: 0.3s;
   transition-timing-function: linear;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
 
   @media (max-width: $desktop-width-max-2) {
     width: 91px;
