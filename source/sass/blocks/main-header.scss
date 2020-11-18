@@ -31,11 +31,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-}
 
-.main-header__logo-background {
-  background-color: $bgcolor-main;
+    &--back {
+      background-color: $bgcolor-main;
+    }
+  }
 }
 
 .main-header__btn {
@@ -120,6 +120,12 @@
 
 .main-header__logo {
   display: block;
+
+  &--close {
+    @media (max-width: $tablet-width-max) {
+      display: none;
+    }
+  }
 }
 
 .main-header__logo--indent {
@@ -131,12 +137,6 @@
 
   @media (max-width: $mobile-width-max) {
     padding-left: 17px;
-  }
-}
-
-@media (max-width: $tablet-width-max) {
-  .main-header__logo--close {
-    display: none;
   }
 }
 
