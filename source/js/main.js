@@ -5,18 +5,20 @@
   var menuList = document.querySelector('.main-nav');
   var menuBack = document.querySelector('.main-header__logo-wrap');
   var headerLogo = document.querySelector('.main-header__logo');
+  var mainHeader= document.querySelector('.main-header__wrap');
 
   var menuHide = function () {
     menuBtn.classList.toggle('main-header__btn--open');
     menuList.classList.toggle('main-nav--hidden');
-
+    menuBack.classList.toggle('main-header__logo-wrap--back');
+    mainHeader.classList.add('main-header__wrap--absolute');
   };
 
   menuHide();
 
   menuBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
-    menuHide();
+    menuList.classList.toggle('main-nav--hidden');
     menuBtn.classList.toggle('main-header__btn--close');
     menuBack.classList.toggle('main-header__logo-wrap--back');
     headerLogo.classList.toggle('main-header__logo--close');
