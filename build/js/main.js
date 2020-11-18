@@ -3,6 +3,7 @@
 (function () {
   var menuBtn = document.querySelector(".main-header__btn");
   var menuList = document.querySelector(".main-nav");
+  var menuBack = document.querySelector(".main-header__logo-wrap");
 
   var menuHide = function () {
     menuBtn.classList.toggle("main-header__btn--open");
@@ -15,6 +16,7 @@
     evt.preventDefault();
     menuHide();
     menuBtn.classList.toggle("main-header__btn--close");
+    menuBack.classsList.toggle("main-header__logo-background");
   });
 })();
 

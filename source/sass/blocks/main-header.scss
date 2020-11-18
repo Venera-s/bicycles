@@ -1,4 +1,5 @@
 .main-header {
+  position: relative;
   background-image: url("../img/bike-desktop.png");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -9,20 +10,39 @@
   }
 }
 
+.main-header__wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
 .main-header__logo-wrap {
   display: none;
 
   @media (max-width: $tablet-width-max) {
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // z-index: 999;
+    // display: flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
 
+.main-header__logo-background {
+  background-color: $bgcolor-main;
+}
+
 .main-header__btn {
   @media (max-width: $tablet-width-max) {
     @include reset-indents;
-    display: block;
+    margin-left: auto;
+    // display: block;
     width: 50px;
     height: 50px;
     border: none;

@@ -17,30 +17,32 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <div class="main-header__logo-wrap">
-        <a class="main-header__logo main-header__logo--indent">
-          <svg class="main-header__icon" width="68" height="21">
-            <use xlink:href="img/sprite.svg#icon-logo"></use>
-          </svg>
-        </a>
-        <button class="main-header__btn" type="button" aria-label="Открыть меню"></button>
+      <div class="main-header__wrap">
+        <div class="main-header__logo-wrap">
+          <a class="main-header__logo main-header__logo--indent">
+            <svg class="main-header__icon" width="68" height="21">
+              <use xlink:href="img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button class="main-header__btn" type="button" aria-label="Открыть меню"></button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#facts">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#bikes">Виды велосипедов</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#video">Видео про велосипеды</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#facts">О нас</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#bikes">Виды велосипедов</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#video">Видео про велосипеды</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
       <div class="main-header__intro-wrap">
         <div class="main-header__intro">
           <a class="main-header__logo main-header__logo--indent main-header__logo--close">
@@ -57,13 +59,11 @@
           <h2 class="visually-hidden form-bid__title">Подобрать велосипед</h2>
           <p class="form-bid__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <div class="form-bid__field">
-            <input type="text" name="name" id="name-field"
-              placeholder="Введите Ваше Имя" required>
+            <input type="text" name="name" id="name-field" placeholder="Введите Ваше Имя" required>
             <label class="visually-hidden" for="name-field">Введите Ваше Имя</label>
           </div>
           <div class="form-bid__field">
-            <input type="text" name="tel" id="tel-field"
-              placeholder="Введите Ваш номер телефона" required>
+            <input type="text" name="tel" id="tel-field" placeholder="Введите Ваш номер телефона" required>
             <label class="visually-hidden" for="tel-field">Введите Ваш номер телефона</label>
           </div>
           <div class="form-bid__field">
