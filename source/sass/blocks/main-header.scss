@@ -12,12 +12,17 @@
 
 .main-header__wrap {
   &--absolute {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
+    // display: none;
+
+    @media (max-width: $tablet-width-max) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 999;
+    }
   }
 }
 

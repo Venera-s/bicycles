@@ -159,7 +159,7 @@
 }
 
 
-.bikes__item .bikes__img--mountain {
+.bikes__item--mountain img {
   padding-top: 39px;
 
   @media (max-width: $desktop-width-max-2) {
@@ -167,7 +167,7 @@
   }
 }
 
-.bikes__item .bikes__img--road {
+.bikes__item--road img {
   padding-top: 10px;
 
   @media (max-width: $desktop-width-max-2) {

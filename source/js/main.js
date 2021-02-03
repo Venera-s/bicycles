@@ -5,13 +5,13 @@
   var menuList = document.querySelector('.main-nav');
   var menuBack = document.querySelector('.main-header__logo-wrap');
   var headerLogo = document.querySelector('.main-header__logo');
-  var mainHeader= document.querySelector('.main-header__wrap');
+  var mainHeader = document.querySelector('.main-header__wrap');
+  var mainNavList = menuList.querySelector('.main-nav__list');
 
   var menuHide = function () {
     menuBtn.classList.toggle('main-header__btn--open');
     menuList.classList.toggle('main-nav--hidden');
     menuBack.classList.toggle('main-header__logo-wrap--back');
-    mainHeader.classList.add('main-header__wrap--absolute');
   };
 
   menuHide();
@@ -22,11 +22,14 @@
     menuBtn.classList.toggle('main-header__btn--close');
     menuBack.classList.toggle('main-header__logo-wrap--back');
     headerLogo.classList.toggle('main-header__logo--close');
+    document.body.classList.toggle('overflow-hidden');
+    mainHeader.classList.toggle('main-header__wrap--absolute');
+    mainNavList.classList.toggle('main-nav__list--fixed');
   });
 })();
 
 (function () {
-  var inputTel = document.getElementById(`tel-field`);
+  var inputTel = document.getElementById('tel-field');
   var MIN_TITLE_LENGTH = 22;
 
   var phoneMask = function () {
