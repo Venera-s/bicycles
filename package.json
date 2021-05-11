@@ -1,6 +1,6 @@
 {
   "name": "bicycles",
-  "version": "17.0.0",
+  "version": "14.0.0",
   "private": true,
   "description": "Moon - интернет-магазин велосипедов",
   "devDependencies": {
@@ -58,6 +58,6 @@
     "source/js/*.js"
   ],
   "engines": {
-    "node": "8.16"
+    "node": "10"
   }
 }
